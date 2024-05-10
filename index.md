@@ -20,5 +20,3 @@ The REV Hardware Client is an Electron program allowing for connection and manag
 ## librevhub (Coming soon!)
 https://github.com/unofficial-rev-port/SerialHubControl
 
-## librevhub (Coming soon!)
-## librevhub (Coming soon!)
