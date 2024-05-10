@@ -1,13 +1,13 @@
 # Unofficial REV Robotics software port/development team
 
 ## REV Hub Interface - Community Edition
-https://github.com/unofficial-rev-port/REVHubInterface
+<https://github.com/unofficial-rev-port/REVHubInterface>
 
 ## REV Hardware Client - Community Edition (Coming soon!)
-https://github.com/unofficial-rev-port/REV-Hardware-Client
+<https://github.com/unofficial-rev-port/REV-Hardware-Client>
 
 ## librevhub (Coming soon!)
-https://github.com/unofficial-rev-port/SerialHubControl
+<https://github.com/unofficial-rev-port/SerialHubControl>
 
 ----------
 
