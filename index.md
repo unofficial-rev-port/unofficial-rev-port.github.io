@@ -1,8 +1,7 @@
 # Unofficial REV Robotics software port/development team
-We are a team of FIRST Robotics students and alumni working to port various software from REV Robotics to other platforms. 
+We are a team of FIRST Robotics students and alumni working to continue development of various software from REV Robotics and port it to other platforms. 
 
-## REV Hub Interface - Community Edition
-https://github.com/unofficial-rev-port/REVHubInterface
+## [REV Hub Interface - Community Edition](https://github.com/unofficial-rev-port/REVHubInterface)
 
 The REV Hub Interface is a Python program allowing for a direct connection from a REV Expansion Hub and its peripherals to a PC.
 
@@ -12,11 +11,10 @@ This is a community continuation of the software, updating to newer underlying t
 
 Downloads are available from the [GitHub releases page](https://github.com/unofficial-rev-port/REVHubInterface/releases) or from [PyPi/pip](https://pypi.org/project/REVHubInterface/). A Flathub release [is also underway](https://github.com/flathub/flathub/pull/5224).
 
-## REV Hardware Client - Community Edition (Coming soon!)
-https://github.com/unofficial-rev-port/REV-Hardware-Client
+## [REV Hardware Client - Community Edition (Coming soon!)](https://github.com/unofficial-rev-port/REV-Hardware-Client)
 
 The REV Hardware Client is an Electron program allowing for connection and management of various REV hardware from a PC. 
 
-## librevhub (Coming soon!)
-https://github.com/unofficial-rev-port/SerialHubControl
+## [librevhub (Coming soon!)](https://github.com/unofficial-rev-port/SerialHubControl)
 
+A Python library for controlling a REV Expansion Hub.
