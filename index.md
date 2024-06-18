@@ -15,7 +15,9 @@ Downloads are available from the [GitHub releases page](https://github.com/unoff
 
 ## [REV Hardware Client - Community Edition (Coming soon!)](https://github.com/unofficial-rev-port/REV-Hardware-Client)
 
-The REV Hardware Client is an Electron program allowing for connection and management of various REV hardware from a PC.  Work in progress as of now.
+The REV Hardware Client is an Electron program allowing for connection and management of various REV hardware from a PC. It is useful for FTC teams and incredibly important for FRC teams every day.
+
+Work in progress as of now.
 
 ## [librevhub (Coming soon!)](https://github.com/unofficial-rev-port/SerialHubControl)
 
