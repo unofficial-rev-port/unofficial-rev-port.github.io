@@ -24,6 +24,14 @@
                 border-color: azure;
                 border-style: solid;                
             }
+            a:link, a:visited {
+                color: aqua;
+
+            }
+
+            a:hover, a:active {
+                color:red;
+            }
 
           </style>
     </head>
@@ -52,18 +60,39 @@
                         REV Hardware Client
                     </b>
                     <br><br>
-                    The REV Hardware Client is a peice of software for the configuration, updating, and management
+                    The REV Hardware Client is software for the configuration, updating, and management
                     of REV Robotics Hardware. From REV, it only has a Windows x86_64 build, meaning it will not work for
                     users with ARM CPUs or of Linux or MacOS operating systems. 
                     <br><br>
                     Our port is currently in progress, and once
                     finished we will have to work with REV on way to release once complete.
+                    <br><br>
+                    <div style="text-align: center;">
+                        <img src="src/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 90%; margin: auto;">
+                    </div>
                 </p>
             </div>
             
             <div class="float-child">
-                <p style="padding: 5px;">
-
+                <p style="padding: 3%;">
+                    <b>
+                        REV Hub Interface: Community Edition
+                    </b>
+                    <br><br>
+                    The REV Hub Interface is software that can control a REV Expansion Hub over USB serial. REV's version
+                    has been useful for many teams, but has been mostly abandonded since at least 2022 and was buggy. It also only
+                    had a windwos x86_64 build. 
+                    <br><br>
+                    Our port is complete, featuring a new, more modern gui, several packaging option on Windows, MacOS, and Linux. 
+                    We also have implemented many bugfixes and improvements, such as running it on a much newer python version,
+                    improving the update time of hardware reads to provide more up to date information, and adding new features, like 
+                    motor pids! The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our github,</a>
+                    <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on flatpak,</a>
+                    <a href="https://pypi.org/project/REVHubInterface/">and on python through pypi!</a>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <img src="src/rhi.png" alt="a photo of the community rev hub interface" style="width: 90%;">
+                    </div>
                 </p>
             </div>
             
