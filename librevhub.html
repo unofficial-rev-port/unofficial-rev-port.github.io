@@ -3,9 +3,9 @@
     <head>
         <style>
             .center {
-              margin: auto; 
-              width: 85%;
-              padding: 8px;
+                margin: auto;
+                width: 85%;
+                padding: 8px;
             }
             .pg {
                 line-height: 1.4;
@@ -37,12 +37,47 @@
             a:hover, a:active {
                 color:red;
             }
+            .gallery{
+                border-radius: 8px;
+                border-color: azure;
+                border-style: solid;
+                width: 90%;
+                margin: auto;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+            }
+            .image{
+                width: fit-content;
+                height: fit-content;
+                float: left;
+            }
 
           </style>
     </head>
-    <body>
-        <p>
-            Hello from LibREVHub
-        </p>
+    <Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 15x; padding-top: 30px">
+        <title>
+            LibREVHub
+        </title>
+        <h1 align="center">
+            LibREVHub
+        </h1>
+        <div class="center">
+            <p class="pg"> 
+                LibREVHub: a custom serial controls stack for controling a REV Expansion hub from a pc.
+                <br><br>
+                LibREVHub can be used for many different things, as it gives as much control of an Expansion hub as you would get
+                with the FTC SDK, with everything form hardware device apis and a system similar to an OpMode. 
+            </p>
+        </div>
+        <div class="gallery">
+            <h1 style="padding-left: 2%;">
+                Gallery
+            </h1>
+            <br><br>
+            <div>
+                <img src="src/rhi.png">
+            </div>
+        </div>
     </body>
 </html>
