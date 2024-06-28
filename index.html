@@ -37,6 +37,25 @@
             a:hover, a:active {
                 color:red;
             }
+            #wrapper {
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+
+            header {
+            height: 100px;
+            background: yellow;
+            }
+
+            footer {
+            height: 50px;
+            margin-top: auto;
+            }
+
+            main {
+            height: 1300px
+            }
 
           </style>
     </head>
@@ -44,83 +63,90 @@
         <title>
           Unoffical REV Port
         </title>
-        <h1 align="center">
-          Unnoffical REV Port
-        </h1>
-        <div class="center">
-            <p class="pg"> 
-                Welcome to the website for Unoffical REV port!
-                <br><br>
-                We are a team of FIRST students and alumni from both the FTC and FRC program and 
-                we have a passion for robotics and making. Our goal is to make FRC and FTC software 
-                available to all no matter their platform or operating system, as well as doing our best
-                to keep current hardware realavent past the upcoming MRC switch for the 2027 FIRST season.
-            </p>
-        </div>
-        <div class="float-container">
-            <br>
-            <div class="float-child">
-                <p style="padding: 3%;">
-                    <b>
-                        <a href="revhwc.html">REV Hardware Client</a>
-                    </b>
+        <div id="wrapper">
+            <main>
+            <h1 align="center">
+                Unnoffical REV Port
+            </h1>
+            <div class="center">
+                <p class="pg"> 
+                    Welcome to the website for Unoffical REV port!
                     <br><br>
-                    The REV Hardware Client is software for the configuration, updating, and management
-                    of REV Robotics Hardware. From REV, it only has a Windows x86_64 build, meaning it will not work for
-                    users with ARM CPUs or of Linux or MacOS operating systems. 
-                    <br><br>
-                    Our port is currently in progress, and once
-                    finished we will have to work with REV on way to release once complete.
-                    <br>
-                    <div style="text-align: center;">
-                        <img src="src/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 480px; height: 300px; margin: auto;">
-                    </div>
-                    <br>
-                    If you have any development experience on proje
+                    We are a team of FIRST students and alumni from both the FTC and FRC program and 
+                    we have a passion for robotics and making. Our goal is to make FRC and FTC software 
+                    available to all no matter their platform or operating system, as well as doing our best
+                    to keep current hardware realavent past the upcoming MRC switch for the 2027 FIRST season.
                 </p>
             </div>
-            
-            <div class="float-child">
-                <p style="padding: 3%;">
-                    <b>
-                        <a href="revhubinterface.html">REV Hub Interface: Community Edition</a>
-                    </b>
-                    <br><br>
-                    The REV Hub Interface is software that can control a REV Expansion Hub over USB serial. REV's version
-                    has been useful for many teams, but has been mostly abandonded since at least 2022 and was buggy. It also only
-                    had a windwos x86_64 build. 
-                    <br><br>
-                    Our port is complete, featuring a new, more modern gui, several packaging option on Windows, MacOS, and Linux. 
-                    We also have implemented many bugfixes and improvements, such as running it on a much newer python version,
-                    improving the update time of hardware reads to provide more up to date information, and adding new features, like 
-                    motor pids! The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our github,</a>
-                    <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on flatpak,</a>
-                    <a href="https://pypi.org/project/REVHubInterface/">and on python through pypi!</a>
-                    <br><br>
-                    <div style="text-align: center;">
-                        <img src="src/rhi.png" alt="a photo of the community rev hub interface" style="width: 375px; height: 450px;">
-                    </div>
-                </p>
-            </div>
+            <div class="float-container">
+                <br>
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="revhwc.html">REV Hardware Client</a>
+                        </b>
+                        <br><br>
+                        The REV Hardware Client is software for the configuration, updating, and management
+                        of REV Robotics Hardware. From REV, it only has a Windows x86_64 build, meaning it will not work for
+                        users with ARM CPUs or of Linux or MacOS operating systems. 
+                        <br><br>
+                        Our port is currently in progress, and once
+                        finished we will have to work with REV on way to release once complete.
+                        <br>
+                        <div style="text-align: center;">
+                            <img src="src/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 480px; height: 300px; margin: auto;">
+                        </div>
+                        <br>
+                        If you have any development experience on proje
+                    </p>
+                </div>
+                
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="revhubinterface.html">REV Hub Interface: Community Edition</a>
+                        </b>
+                        <br><br>
+                        The REV Hub Interface is software that can control a REV Expansion Hub over USB serial. REV's version
+                        has been useful for many teams, but has been mostly abandonded since at least 2022 and was buggy. It also only
+                        had a windwos x86_64 build. 
+                        <br><br>
+                        Our port is complete, featuring a new, more modern gui, several packaging option on Windows, MacOS, and Linux. 
+                        We also have implemented many bugfixes and improvements, such as running it on a much newer python version,
+                        improving the update time of hardware reads to provide more up to date information, and adding new features, like 
+                        motor pids! The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our github,</a>
+                        <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on flatpak,</a>
+                        <a href="https://pypi.org/project/REVHubInterface/">and on python through pypi!</a>
+                        <br><br>
+                        <div style="text-align: center;">
+                            <img src="src/rhi.png" alt="a photo of the community rev hub interface" style="width: 375px; height: 450px;">
+                        </div>
+                    </p>
+                </div>
 
-            <div class="float-child">
-                <p style="padding: 3%;">
-                    <b>
-                        <a href="librevhub.html">LibREVHub</a>
-                    </b>
-                    <br><br>
-                    LibREVHub is a entirely origonal peice of software based off of the internal code of the REV Hub Interface.
-                    It's main purpose is to seperate the REV Hub Interface app from its intenrals allowing the internals to be
-                    used in other contexts, such as a custom control system. It features a completly rebuilt paccket processing
-                    function, a bulk read implementation, and user facing SDK devices
-                    <br><br>
-                    Our port is currently in progress, with bulk reads about half implemented, communications a little bugged,
-                    and no functioning REV Hub Interface build to go with it, howevere it is under very active development.
-                    <br> <br>
-                    The project is available on <a href="https://github.com/unofficial-rev-port/SerialHubControl">github.</a>
-                </p>
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="librevhub.html">LibREVHub</a>
+                        </b>
+                        <br><br>
+                        LibREVHub is a entirely origonal peice of software based off of the internal code of the REV Hub Interface.
+                        It's main purpose is to seperate the REV Hub Interface app from its intenrals allowing the internals to be
+                        used in other contexts, such as a custom control system. It features a completly rebuilt paccket processing
+                        function, a bulk read implementation, and user facing SDK devices
+                        <br><br>
+                        Our port is currently in progress, with bulk reads about half implemented, communications a little bugged,
+                        and no functioning REV Hub Interface build to go with it, howevere it is under very active development.
+                        <br> <br>
+                        The project is available on <a href="https://github.com/unofficial-rev-port/SerialHubControl">github.</a>
+                    </p>
+                </div>
+                
+                </div>
+                </main>
+                <footer>
+                    Hardcoded footer is bad but i got it to work!
+                </footer>
             </div>
-            
-          </div>
       </Body>
     </html>
