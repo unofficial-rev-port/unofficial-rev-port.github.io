@@ -18,11 +18,12 @@
                 display: flex;
                 flex-wrap: wrap;
                 align-items: flex-start;
-    
+                margin-bottom: 300px;
             }
             .float-child {
-                margin: 2.5% 2.5% -210px;
-                width: 44%;
+                margin: 2.5% 2.5% -260px;
+                padding: 2%;
+                width: 40%;
                 float: left;
                 border-radius: 8px;
                 border-color: azure;
@@ -51,6 +52,24 @@
                 margin-top: auto;
             }
 
+            .img-container {
+                text-align: center;
+            }
+
+            .img-container img {
+                width: 100%;
+            }
+
+            @media (max-width:768px) {
+                .float-child {
+                    margin: 2.5%;
+                    width: 96%;
+                }
+                .float-container {
+                    margin-bottom: 40px;
+                }
+            }
+
         </style>
     </head>
     <body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 30px 15px 15px;">
@@ -70,9 +89,8 @@
                     </p>
                 </div>
                 <div class="float-container">
-                    <br>
                     <div class="float-child">
-                        <p style="padding: 3%;">
+                        <p>
                             <b>
                                 <a href="revhwc.html">REV Hardware Client</a>
                             </b>
@@ -84,13 +102,13 @@
                             Our port is now in progress, and once finished,
                             we will have to work with REV on the way to release once complete.
                             <br>
-                            <div style="text-align: center;">
-                                <img src="revhardwareclient/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 480px; height: 300px; margin: auto;">
+                            <div class="img-container">
+                                <img src="revhardwareclient/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS">
                             </div>
                     </div>
                     
                     <div class="float-child">
-                        <p style="padding: 3%;">
+                        <p>
                             <b>
                                 <a href="revhubinterface.html">REV Hub Interface: Community Edition</a>
                             </b>
@@ -111,13 +129,13 @@
                             <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on Flathub,</a>
                             <a href="https://pypi.org/project/REVHubInterface/">and on Python through PyPI!</a>
                             <br><br>
-                            <div style="text-align: center;">
-                                <img src="revhubinterface/motorcontrol.png" alt="a photo of the community rev hub interface" style="width: 375px; height: 450px;">
+                            <div class="img-container">
+                                <img src="revhubinterface/motorcontrol.png" alt="a photo of the community rev hub interface">
                             </div>
                     </div>
 
                     <div class="float-child">
-                        <p style="padding: 3%;">
+                        <p>
                             <b>
                                 <a href="librevhub.html">LibREVHub</a>
                             </b>
