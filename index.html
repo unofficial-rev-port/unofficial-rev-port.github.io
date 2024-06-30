@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <style>
+    .center {
+        margin: auto;
+        width: 85%;
+        padding: 8px;
+    }
+    .pg {
+        line-height: 1.4;
+        font-size: 18px;
+    }
+    .float-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+    }
+    .float-child {
+        margin: 2.5% 2.5% -210px;
+        width: 44%;
+        float: left;
+        border-radius: 8px;
+        border-color: azure;
+        border-style: solid;
+    }
+    a:link, a:visited {
+        color: aqua;
+    }
+
+    a:hover, a:active {
+        color:red;
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    header {
+        height: 100px;
+        background: yellow;
+    }
+
+    footer {
+        height: 50px;
+        margin-top: auto;
+    }
+
+    main {
+        height: 1350px
+    }
+
+</style>
+<Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 30px 15px 15px;">
+        <div id="wrapper">
+            <main>
+            <h1 class="center">
+                Unofficial REV Port
+            </h1>
+            <div class="center">
+                <p class="pg"> 
+                    Welcome to the Unofficial REV Port Team website!
+                    <br><br>
+                    We are a group of passionate FTC and FRC students and alumni who wish to allow FIRST teams 
+                    to use REV software on any OS, not just Windows. Our goal is to make FRC and FTC software 
+                    available to all, no matter their platform or operating system, as well as doing our best
+                    to keep current hardware relevant past the upcoming MRC switch for the 2027 FIRST season.
+                </p>
+            </div>
+            <div class="float-container">
+                <br>
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="revhwc.html">REV Hardware Client</a>
+                        </b>
+                        <br><br>
+                        The REV Hardware Client is software for the configuration, updating, and management
+                        of REV Robotics Hardware. From REV, it only has a Windows x86_64 build, meaning it will not work for
+                        users with ARM CPUs or of Linux or macOS operating systems. 
+                        <br><br>
+                        Our port is now in progress, and once finished,
+                        we will have to work with REV on the way to release once complete.
+                        <br>
+                        <div style="text-align: center;">
+                            <img src="revhardwareclient/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 480px; height: 300px; margin: auto;">
+                        </div>
+                </div>
+                
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="revhubinterface.html">REV Hub Interface: Community Edition</a>
+                        </b>
+                        <br><br>
+                        The REV Hub Interface allows you to control a REV Expansion Hub over USB. REV's version
+                        has been useful for many teams, but has been mostly abandoned since at least 2022 and has several major bugs. It also only
+                        had a Windows x86_64 build.
+                        <br><br>
+                        Our port is complete.
+                        It features a new, modern GUI as well as several download options for Windows, Mac, and Linux.
+                        We also have implemented many bugfixes and improvements,
+                        such as updating python to a much more modern version,
+                        improving the update time of hardware reads
+                        to provide more up-to-date information,
+                        and adding new features, like
+                        motor PIDs!
+                        The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our GitHub,</a>
+                        <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on Flathub,</a>
+                        <a href="https://pypi.org/project/REVHubInterface/">and on Python through PyPI!</a>
+                        <br><br>
+                        <div style="text-align: center;">
+                            <img src="revhubinterface/motorcontrol.png" alt="a photo of the community rev hub interface" style="width: 375px; height: 450px;">
+                        </div>
+                </div>
+
+                <div class="float-child">
+                    <p style="padding: 3%;">
+                        <b>
+                            <a href="librevhub.html">LibREVHub</a>
+                        </b>
+                        <br><br>
+                        LibREVHub is an original piece of software based on the communications code from REV Hub Interface.
+                        It separates the REV Hub Interface app from its internals allowing them to be
+                        used in other contexts, such as a custom control system.
+                        It features a completely rebuilt packet processing
+                        function, a bulk read implementation,
+                        and a user-facing SDK to interface with devices
+                        <br><br>
+                        Our port is now in progress, with bulk reads about half implemented,
+                        communications a little bugged,
+                        and no functioning REV Hub Interface build to go with it.
+                        However, it is under active development.
+                        <br> <br>
+                        The project's source code is available <a href="https://github.com/unofficial-rev-port/SerialHubControl">on GitHub.</a>
+                    </p>
+                </div>
+                
+                </div>
+                </main>
+                <footer>
+                    <div style="margin-left: 5%;">
+                        <a href="https://discord.gg/2CJqU6YX2W" rel="nofollow">
+                            <img alt="unofficial REV port discord badge" src="https://img.shields.io/discord/1237587540014403614?style=flat&logo=discord&color=5865F2">
+                        </a>
+                        <br>
+                        <a href="https://github.com/unofficial-rev-port" rel="nofollow">
+                            <img alt="unofficial REV port github badge" src="https://img.shields.io/badge/https%3A%2F%2Fgithub.com%2Funofficial-rev-port?style=flat&logo=github&label=Unofficial%20REV%20Port">
+                        </a>
+                        <br>
+                        <a href="aboutus.html">About our team</a>
+                    </div> 
+                </footer>
+            </div>
+      </Body>
+    </html>
