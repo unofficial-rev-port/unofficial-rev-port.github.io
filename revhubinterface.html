@@ -1,66 +1,50 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            .center {
-              margin: auto; 
-              width: 85%;
-              padding: 8px;
-            }
-            .pg {
-                line-height: 1.4;
-                font-size: 18px;
-            }
-            .float-container {
-                width: 90%;
-                margin: auto;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
+<html lang="en-US">
+<style>
+    .center {
+        margin: auto;
+        width: 85%;
+        padding: 8px;
+    }
+    .pg {
+        line-height: 1.4;
+        font-size: 18px;
+    }
 
-            }
-            .float-child {
-                margin-left: 2.5%;
-                margin-right: 2.5%;
-                margin-bottom: -170px;
-                margin-top: 2.5%;
-                width: 44%;
-                float: left;
-                border-radius: 8px;
-                border-color: azure;
-                border-style: solid;                
-            }
-            a:link, a:visited {
-                color: aqua;
-            }
+    a:link, a:visited {
+        color: aqua;
+    }
 
-            a:hover, a:active {
-                color:red;
-            }
+    a:hover, a:active {
+        color:red;
+    }
 
-          </style>
-    </head>
-    <Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 15x; padding-top: 30px">
-        <title>
-            REV Hub Interface
-        </title>
-        <h1 align="center">
+</style>
+<title>
+    REV Hub Interface
+</title>
+<Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 30px 15px 15px;">
+        <h1 class="center">
             REV Hub Interface
         </h1>
         <div class="center">
             <p class="pg"> 
-                REV Hub Interface: manual REV Expansion Hub control with no progrmaing required
+                REV Hub Interface: manual REV Expansion Hub control with no programming required
                 <br><br>
                 The REV Hub Interface is a piece of software allowing for a direct connection from a REV Expansion Hub and its peripherals to a PC.
                 <br><br>
                 This interface provides a method for teams to prototype with motors, servos, and sensors in a way that is faster and easier than setting
-                up an entire robot control system. It is also a valuable troubleshooting tool that can help isolate the cause of an issue and determine 
-                if it is electrical or software related. The REV Hub Firmware can also be updated and recovered through this interface in addition to the 
-                Robot Controller Application.
+                up an entire robot control system.
+                It is also a valuable troubleshooting tool that can help isolate the cause of an issue and determine
+                if it is caused by hardware or by software.
+                Firmware can also be updated and recovered through this interface as well as the Robot Controller Application.
                 <br><br>
-                This is a community continuation of the software, updating to newer underlying technologies (e.g. porting from Python 2 to Python 3), adding 
-                features, and porting to more platforms (Linux and macOS, in addition to Windows). Though initially created by REV, this version of the software 
-                is not maintained by or affiliated with REV. Do not contact REV support about any issues you experience with this software.
+                This is a community continuation of the software, updating to newer underlying technologies
+                (such as porting from Python 2 to Python 3), adding features,
+                and porting to more platforms (Linux and macOS, in addition to Windows).
+                Though initially created by REV,
+                this version of the software is not maintained by or affiliated with REV.
+                Do not contact REV support about any issues you experience with this software.
                 <br><br>
                 REV Hub Interface's code is public and available <a href="https://github.com/unofficial-rev-port/SerialHubControl">here.</a>
             </p>

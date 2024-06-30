@@ -1,72 +1,64 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <style>
-            .center {
-                margin: auto; 
-                width: 85%;
-                padding: 8px;
-            }
-            .pg {
-                line-height: 1.4;
-                font-size: 18px;
-            }
-            .float-container {
-                width: 90%;
-                margin: auto;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
+<html lang="en-US">
+    <style>
+    .center {
+        margin: auto;
+        width: 85%;
+        padding: 8px;
+    }
+    .pg {
+        line-height: 1.4;
+        font-size: 18px;
+    }
+    .float-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
-            }
-            .float-child {
-                margin-left: 2.5%;
-                margin-right: 2.5%;
-                margin-bottom: -210px;
-                margin-top: 2.5%;
-                width: 44%;
-                float: left;
-                border-radius: 8px;
-                border-color: azure;
-                border-style: solid;                
-            }
-            a:link, a:visited {
-                color: aqua;
-            }
+    }
+    .float-child {
+        margin: 2.5% 2.5% -210px;
+        width: 44%;
+        float: left;
+        border-radius: 8px;
+        border-color: azure;
+        border-style: solid;
+    }
+    a:link, a:visited {
+        color: aqua;
+    }
 
-            a:hover, a:active {
-                color:red;
-            }
-            #wrapper {
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
+    a:hover, a:active {
+        color:red;
+    }
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
 
-            header {
-                height: 100px;
-                background: yellow;
-            }
+    header {
+        height: 100px;
+        background: yellow;
+    }
 
-            footer {
-                height: 50px;
-                margin-top: auto;
-            }
+    footer {
+        height: 50px;
+        margin-top: auto;
+    }
 
-            main {
-                height: 1350px
-            }
+    main {
+        height: 1350px
+    }
 
-          </style>
-    </head>
-    <Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 15x; padding-top: 30px">
-        <title>
-            Unofficial REV Port
-        </title>
+</style>
+<Body style="background-color: #323232; color: azure; font-family: Arial, Helvetica, sans-serif; padding: 30px 15px 15px;">
         <div id="wrapper">
             <main>
-            <h1 align="center">
-                Unofficialf REV Port
+            <h1 class="center">
+                Unofficial REV Port
             </h1>
             <div class="center">
                 <p class="pg"> 
@@ -90,13 +82,12 @@
                         of REV Robotics Hardware. From REV, it only has a Windows x86_64 build, meaning it will not work for
                         users with ARM CPUs or of Linux or macOS operating systems. 
                         <br><br>
-                        Our port is currently in progress, and once
-                        finished we will have to work with REV on way to release once complete.
+                        Our port is now in progress, and once finished,
+                        we will have to work with REV on the way to release once complete.
                         <br>
                         <div style="text-align: center;">
                             <img src="revhardwareclient/rhwcmac.png" alt="a photo of the rev hardware client running on MacOS" style="width: 480px; height: 300px; margin: auto;">
                         </div>
-                    </p>
                 </div>
                 
                 <div class="float-child">
@@ -106,20 +97,24 @@
                         </b>
                         <br><br>
                         The REV Hub Interface allows you to control a REV Expansion Hub over USB. REV's version
-                        has been useful for many teams, but has been mostly abandonded since at least 2022 and has several major bugs. It also only
-                        had a Windows x86_64 build. 
+                        has been useful for many teams, but has been mostly abandoned since at least 2022 and has several major bugs. It also only
+                        had a Windows x86_64 build.
                         <br><br>
-                        Our port is complete. It features a new, modern GUI as well as several download options for Windows, Mac, and Linux. 
-                        We also have implemented many bugfixes and improvements, such as updating python to a much more modern version,
-                        improving the update time of hardware reads to provide more up to date information, and adding new features, like 
-                        motor pids! The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our github,</a>
+                        Our port is complete.
+                        It features a new, modern GUI as well as several download options for Windows, Mac, and Linux.
+                        We also have implemented many bugfixes and improvements,
+                        such as updating python to a much more modern version,
+                        improving the update time of hardware reads
+                        to provide more up-to-date information,
+                        and adding new features, like
+                        motor PIDs!
+                        The download is available <a href="https://github.com/unofficial-rev-port/REVHubInterface">on our GitHub,</a>
                         <a href="https://flathub.org/apps/org.unofficialrevport.REVHubInterface">on Flathub,</a>
                         <a href="https://pypi.org/project/REVHubInterface/">and on Python through PyPI!</a>
                         <br><br>
                         <div style="text-align: center;">
                             <img src="revhubinterface/motorcontrol.png" alt="a photo of the community rev hub interface" style="width: 375px; height: 450px;">
                         </div>
-                    </p>
                 </div>
 
                 <div class="float-child">
@@ -128,15 +123,19 @@
                             <a href="librevhub.html">LibREVHub</a>
                         </b>
                         <br><br>
-                        LibREVHub is an origonal peice of software based off of the internal code of the REV Hub Interface.
-                        It seperates the REV Hub Interface app from its internals allowing them to be
-                        used in other contexts, such as a custom control system. It features a completly rebuilt packet processing
-                        function, a bulk read implementation, and a user facing SDK to interface with devices
+                        LibREVHub is an original piece of software based on the communications code from REV Hub Interface.
+                        It separates the REV Hub Interface app from its internals allowing them to be
+                        used in other contexts, such as a custom control system.
+                        It features a completely rebuilt packet processing
+                        function, a bulk read implementation,
+                        and a user-facing SDK to interface with devices
                         <br><br>
-                        Our port is currently in progress, with bulk reads about half implemented, communications a little bugged,
-                        and no functioning REV Hub Interface build to go with it, however it is under very active development.
+                        Our port is now in progress, with bulk reads about half implemented,
+                        communications a little bugged,
+                        and no functioning REV Hub Interface build to go with it.
+                        However, it is under active development.
                         <br> <br>
-                        The project's source code is available <a href="https://github.com/unofficial-rev-port/SerialHubControl">on github.</a>
+                        The project's source code is available <a href="https://github.com/unofficial-rev-port/SerialHubControl">on GitHub.</a>
                     </p>
                 </div>
                 
